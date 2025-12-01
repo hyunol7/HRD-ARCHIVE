@@ -1,0 +1,51 @@
+/* 특징 섹션 강제 세로 배치 */
+.features-section .features-grid {
+    display: block !important;
+    width: 100% !important;
+}
+
+.features-section .feature-card {
+    display: block !important;
+    width: 100% !important;
+    float: none !important;
+    clear: both !important;
+    margin-bottom: 20px !important;
+}
+
+/* 청록색 테마 강제 적용 */
+.hero-title {
+    background: linear-gradient(135deg, #00b8b8 0%, #006b6b 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+}
+
+.btn-primary,
+.download-btn,
+.fixed-apply-btn {
+    background: linear-gradient(135deg, #00b8b8, #006b6b) !important;
+}
+
+.btn-secondary {
+    color: #00b8b8 !important;
+    border-color: #00b8b8 !important;
+}
+
+.nav-link::after {
+    background: linear-gradient(135deg, #00b8b8, #006b6b) !important;
+}
+
+.step-number,
+.faq-q,
+.faq-a {
+    background: linear-gradient(135deg, #00b8b8, #006b6b) !important;
+}
+
+.faq-item.active .faq-question {
+    background: linear-gradient(135deg, #00b8b8, #006b6b) !important;
+}
+
+.faq-item.active .faq-q {
+    background: white !important;
+    color: #00b8b8 !important;
+}
