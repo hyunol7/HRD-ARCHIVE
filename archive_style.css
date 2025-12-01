@@ -37,13 +37,15 @@
 }
 
 .nav-container {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 30px;
+    max-width: 100%;
+    margin: 0;
+    padding: 0 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 80px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .logo-section {
@@ -102,9 +104,9 @@ body {
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    max-width: 100%;
+    margin: 0;
+    padding: 0 15px;
 }
 
 body {
@@ -306,7 +308,7 @@ body {
 
 .partners-carousel-track {
     display: flex;
-    gap: 25px;
+    gap: 30px;
     animation: scroll-partners 35s linear infinite;
     width: max-content;
 }
@@ -332,7 +334,7 @@ body {
 
 .partner-card {
     flex: 0 0 auto;
-    width: 280px;
+    width: 350px;
     text-align: center;
     transition: all 0.3s ease;
 }
@@ -342,14 +344,14 @@ body {
 }
 
 .partner-image-wrapper {
-    width: 280px;
-    height: 140px;
+    width: 350px;
+    height: 175px;
     position: relative;
 }
 
 .partner-img {
-    width: 280px;
-    height: 140px;
+    width: 350px;
+    height: 175px;
     object-fit: contain;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
@@ -364,8 +366,8 @@ body {
 }
 
 .partner-placeholder {
-    width: 280px;
-    height: 140px;
+    width: 350px;
+    height: 175px;
     background: var(--bg-gray);
     border: 3px dashed var(--border-color);
     border-radius: 12px;
@@ -968,7 +970,7 @@ body {
 
 @media (max-width: 768px) {
     .nav-container {
-        padding: 0 20px;
+        padding: 0 15px;
         height: 70px;
     }
 
@@ -1043,18 +1045,18 @@ body {
     }
 
     .partner-card {
-        width: 240px;
+        width: 280px;
     }
 
     .partner-image-wrapper,
     .partner-placeholder {
-        width: 240px;
-        height: 120px;
+        width: 280px;
+        height: 140px;
     }
 
     .partner-img {
-        width: 240px;
-        height: 120px;
+        width: 280px;
+        height: 140px;
         padding: 12px;
     }
 
@@ -1112,7 +1114,7 @@ body {
 @media (max-width: 480px) {
     .nav-container {
         height: 60px;
-        padding: 0 15px;
+        padding: 0 10px;
     }
 
     .nav-logo {
@@ -1194,18 +1196,18 @@ body {
     }
 
     .partner-card {
-        width: 200px;
+        width: 240px;
     }
 
     .partner-image-wrapper,
     .partner-placeholder {
-        width: 200px;
-        height: 100px;
+        width: 240px;
+        height: 120px;
     }
 
     .partner-img {
-        width: 200px;
-        height: 100px;
+        width: 240px;
+        height: 120px;
         padding: 10px;
     }
 
@@ -1218,7 +1220,7 @@ body {
     }
 
     .partners-carousel-track {
-        gap: 15px;
+        gap: 20px;
         animation: scroll-partners 25s linear infinite;
     }
 
