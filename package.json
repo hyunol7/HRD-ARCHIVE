@@ -1,0 +1,16 @@
+{
+  "name": "hrd-archive",
+  "version": "1.0.0",
+  "description": "HRD Archive Website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": ["hrd", "archive"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
+
