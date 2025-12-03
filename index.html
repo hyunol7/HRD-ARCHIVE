@@ -19,7 +19,7 @@
                 
             </div>
             <div class="nav-menu">
-                <a href="#intro" class="nav-link">홈</a>
+                <a href="#partners" class="nav-link">교육기관</a>
                 <a href="#features" class="nav-link">아카이브</a>
                 <a href="#how-to-use" class="nav-link">이용방법</a>
                 <a href="#faq-section" class="nav-link">Q&A</a>
@@ -33,7 +33,7 @@
         <div class="hero-content">
             <h1 class="hero-title">HRD 아카이브</h1>
             <p class="hero-subtitle">
-            기업교육의 끝판왕<span class="indent">HRD 아카이브 비교하고, 선택하세요<br></span>
+            기업교육의 끝판왕<span class="indent">HRD 아카이브 비교하고, 선택하세요<br></span> <br>
             HRD 코리아가 안내해 드립니다.
             </p>
         </div>
@@ -41,7 +41,7 @@
     </section>
 
     <!-- 협력 교육원 슬라이더 섹션 -->
-    <section class="partners-slider-section">
+    <section class="partners-slider-section" id="partners">
         <div class="container">
             <h2 class="section-title">교육 기관</h2>
             
@@ -208,14 +208,14 @@
                         <span class="line-item">신뢰할 만한 교육기관을 찾지 못해<span class="indent">선택에 어려움을 겪을 때,<br></span></span>
                         <span class="line-item">정부 지원사업 절차가 복잡해<span class="indent">행정 부담이 커질 때,<br></span></span>
                         <span class="line-item">수료율이 낮아 교육의 실질적 효과를<span class="indent">느끼기 어려울 때,<br></span></span>
-                        <strong><span class="line-highlight">이러한 상황에서는 HRD 아카이브가<span class="indent">가장 강력한 해결책이 됩니다.<br></span></span>
+                        <strong><span class="line-highlight">이러한 상황에선 HRD 아카이브가<span class="indent">가장 강력한 해결책이 됩니다.<br></span></span>
                         </strong>
                     </p>
                 </div>
                 <div class="feature-card">
                     <h3 class="feature-title">대상 기업</h3>
                     <p class="feature-description">
-                        우선지원대상기업 및<span class="indent"> 1,000인 미만 기업</span>
+                        우선지원대상기업 및<br class="mobile-br"> 1,000인 미만 기업
                     </p>
                 </div>
 
@@ -223,18 +223,16 @@
                     <h3 class="feature-title">정부 지원</h3>
                     <p class="feature-description">
                         <strong>인당 140,000원</strong> <br>
-                        우선지원대상기업 
-                         1인당 14만원 X 90% 지원<br>
-                        1,000인 미만 기업 
-                        1인당 14만원 X 80% 지원<br>
+                        우선지원대상기업 <br class="mobile-br">1인당 90% 지원<br>
+                        1,000인 미만 기업 <br class="mobile-br">1인당 80% 지원
                     </p>
                 </div>
 
                 <div class="feature-card">
                     <h3 class="feature-title">수료 조건</h3>
                     <p class="feature-description feature-when-to-use">
-                        <span class="line-item">  기간 내 15시간 이상 수강 시간<span class="indent">충족시 수료 인정<br></span></span>
-                        <strong>※ 15시간 미만 학습 시 미수료 인정<span class="indent">/ 교육비 지원 불가</span></strong>
+                        <span class="line-item">기간 내 15시간 이상 수강 시간<span class="indent"> 충족시 수료 인정<br></span></span>
+                        <strong><span class="nowrap">※ 15시간 미만 학습 시 미수료 인정</span> <br class="mobile-br">/ 교육비 지원 불가</strong>
                     </p>
                 </div>
 
@@ -342,7 +340,7 @@
                 <div class="faq-item">
                     <div class="faq-question">
                         <span class="faq-q">Q</span>
-                        <span class="faq-text">수료 기간을 채우지 못했을 경우도도 수료증 발급이 가능한가요?</span>
+                        <span class="faq-text">수료 기간을 채우지 못했을 경우도 수료증 발급이 가능한가요?</span>
                         <span class="faq-toggle">+</span>
                     </div>
                     <div class="faq-answer">
@@ -451,6 +449,8 @@
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('visible');
+                } else {
+                    entry.target.classList.remove('visible');
                 }
             });
         }, observerOptions);
